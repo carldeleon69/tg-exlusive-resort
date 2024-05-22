@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+              w[o] = w[o] || function () {
+                  (w[o].q = w[o].q || []).push(arguments) };
+              js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+              js.id = o; js.src = f; js.async = 1;
+              fjs.parentNode.insertBefore(js, fjs) }
+          (window, document, 'script', 'nw', 'https://chat.norby.io/widget'));
+              nw('init', {
+                  apiKey: '806d24f5-fdf9-41e0-9797-6e8043bcdc7d',
+                  serviceBaseUrl: 'https://api.norby.io',
+                  lang: 'en',
+                  languageList: ['EN','RU','EE','IT','FR','DE','UA','ES','FI','SV','DA','NO','PL','PT','TR','ZH','JA'],
+                  mainColor: '#3E247E',
+                  popupBotAvatarColor: '#3E247E',
+                  multichat: true,
+                  botName: 'Bot',
+                  imageTransferEnabled: true,
+                  side: 'right',
+                  marginSideDesktop: 80,
+                  marginBottomDesktop: 48,
+                  marginSideMobile: 16,
+                  marginBottomMobile: 16
+              });
+          </script>
+          <script>
+          setTimeout(function(){ norbyChat.addPopupMessages({
+              text: "Hi, let's chat!",		
+             });
+          }, 5000);
+      </script>
+      <style>
+        @font-face {
+            font-family: Monsterr;
+            src: url(Montserrat-Regular.ttf);
+        }
+
+        * {
+            font-size: 100%;
+            font-family: Monsterr;
+        }
+
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #F1A830;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #0C2043;
+            text-decoration: none;
+        }
+
+        .nav-item .nav-link:hover {
+            background: #0C2043;
+            color: #F1A830;
+        }
+
+        .bordercustom {
+            border: solid #0C2043;
+        }
+
+        .whiteBG {
+            background-color: #fff;
+        }
+
+        .yellowBG {
+            background-color: #F1A830;
+        }
+
+        .darkBG {
+            background-color: #000000;
+        }
+
+        .BlueText {
+            color: #0C2043;
+            font-size: large;
+        }
+
+        .whiteText {
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 30px;
+            color: #0C2043;
+            margin-left: 2px;
+            margin-top: 10px;
+        }
+
+        .titleDark {
+            font-size: 30px;
+            color: #000000;
+            margin-left: 2px;
+            margin-top: 10px;
+        }
+
+        .Citation {
+            text-align: right;
+            margin-right: 20%;
+            font-size: 12px;
+        }
+
+        .regContent {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #F1A830;
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .bodyCont {
+            margin-top: 100px;
+        }
+
+        /* For ICONS*/
+
+        .fa-instagram {
+            color: #fff;
+        }
+
+        .fa-facebook-f {
+            color: #fff;
+        }
+
+        .fa-twitter {
+            color: #fff;
+        }
+
+        .fa-youtube {
+            color: #fff;
+        }
+
+        .black {
+            background-color: #141414;
+        }
+
+        .header-link a {
+            color: #ffffff;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .header-logo {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+        .nav-link {
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: #CFAF3C;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after,
+        .nav-link:focus::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: #CFAF3C;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .overview p,
+        .mission p,
+        .services p,
+        .news-events p,
+        .reviews p,
+        .contact p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .media img,
+        .media video {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .container1 {
+            width: 100%;
+        }
+
+        video {
+            height: auto !important;
+            width: 100% !important;
+        }
+		
+		@media (max-width: 767px) {
+        .center {
+         text-align: center;
+           }
+          .col-md-8.center,
+          .col-md-4.center {
+            text-align: center; /* Adjust as needed */
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .breadcrumb {
+    background-color: #ffffff; 
+    border-radius: 0.25rem; 
+    padding: 10px; 
+    color: #000000;
+  }
+
+  
+  .breadcrumb-item {
+    font-size: 1rem; 
+    color: #000000; 
+  }
+
+ 
+  .breadcrumb-item a {
+    color: #000000; 
+    text-decoration: none; 
+  }
+
+  .breadcrumb-item a:hover {
+    color: #CFAF3C; 
+    text-decoration: none; 
+  }
+
+  
+  .breadcrumb-item.active {
+    color: #6c757d; 
+  }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container ">
+        <h2 class="section-heading">About the Company</h2>
+        <div class="col-12 pt-5 bg-white">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item bitems"><a href="Home1.html">HOME</a></li>
+                <li class="breadcrumb-item "><a href="About.html">ABOUT</a></li>
+               
+              </ol>
+            </nav>
+          </div>
+        <div class="row">
+            <div class="pt-3 pb-5">
+                <img src="firstabout.jpg"  class="img-fluid firstabout col-md-6" style="width: 100%; height: auto;">
+                
+            </div>
+        </div>
+            <div class="container abouthead ">
+                <div class="row pt-5 pb-5">
+                    <div class="">
+                        <h1>ABOUT US </h1>
+                <p>TG Exclusive Resort & Events Place, "Your ultimate destination for relaxation and unforgettable events". Located at Barangay Masuso 3014 Pandi, Bulacan is an exquisite destination nestled in serene surroundings, designed to provide a luxurious escape and a perfect venue for unforgettable events. Our resort blends contemporary architecture with nature's beauty, offering an idyllic retreat for relaxation, celebrations, and gatherings.</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+    
+        
+    </div>
+      
+    </div>
+    <div class="container abouthead ">
+        <div class="row">
+            <div class="col-md-6 pt-2">
+                <h1>MISSION</h1>
+        <p>
+            Our mission at TG Private Resort & Events Place is to deliver an unparalleled experience that exceeds our guests' expectations. We are committed to providing exceptional service, luxurious accommodations, and versatile event spaces, all while fostering a deep connection with nature. Our goal is to create memorable experiences that our guests will cherish for a lifetime.</p>
+            </div>
+            <div class="col-md-6 pt-2 ">
+                <h1>VISION</h1>
+        <p>Our vision is to be recognized as the premier destination for luxury and exclusivity in the resort and events industry. We aim to set the standard for excellence by continually enhancing our facilities and services, embracing sustainable practices, and creating a harmonious balance between luxury and nature. We aspire to be the top choice for guests seeking relaxation, celebration, and inspiration in an elegant and serene environment.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="about" class="section overview ">
+        <div class="container pb-5">
+            <h2 class="section-heading">The Owner</h2><br><br><br>
+            
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="owner.jpg" alt="PG Carpio - Owner" class="img-fluid owner-image abouthead">
+                    
+                </div>
+               
+                <div class="col-md-6 aboutheads">
+                    <h2 style="font-weight: bold;"><strong>Owner:</strong> PG Carpio</h2><br><br><br>
+                    
+                    <p>PG Carpio is a notable businessman and the owner of a premier resort and events venue in Bulacan, Philippines. Known for his entrepreneurial spirit and dedication to excellence, Carpio has successfully transformed his resort into a sought-after destination for exclusive events and luxurious getaways.</p>
+                    <br><br><br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+   
+    <div class="row bordercustom">
+      <nav class="navbar navbar-expand-lg navbar-dark black fixed-top">
+          <div class="col-12">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavTop" aria-controls="navbarNavTop" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center align-items-end" id="navbarNavTop">
+                      <ul class="navbar-nav">
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="About.html">About</a>
+                          </li>
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="Home.html">Rooms</a>
+                          </li>
+                          <li class="nav-item mx-3 d-none d-lg-block">
+                             <a href="Home1.html"><img src="pictures/logo.jpg" alt="Logo" class="header-logo"></a> 
+                          </li>
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="reviews.html">Reviews</a>
+                          </li>
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="contact.html">Contacts</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+    </div>
+	
+   
+    
+    </div>
+    <div class="row darkBG py-5 navbar-dark black">
+             
+      <div class="col-lg-3 col-md-4 mb-12 mb-md-0 ">
+        <center><a href="index.html" class = "navbar-brand " ><img src="pictures/tg logo.jpg" class="d-block w-75"></a> </center>
+
+      </div>
+      
+
+     
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0 whiteText">
+        <h5 class="text-uppercase mb-0 ">Sitemap</h5>
+
+        <ul class="list-unstyled my-2 whiteText">
+          <li>
+            <a href="About.html" class="whiteText ">ABOUT</a>
+          </li>
+          <li>
+            <a href="Local.html" class=" whiteText">ROOMS</a>
+          </li>
+          <li>
+            <a href="reviews.html" class=" whiteText">REVIEWS</a>
+          </li>
+          <li>
+            <a href="contact.html" class=" whiteText">CONTACTS</a>
+          </li>
+  
+        </ul>
+      </div>
+    
+
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase whiteText ">Social Media</h5>
+
+        <ul class="list-unstyled mb-0">
+          
+          
+            <a href="https://www.facebook.com/TGPrivateResort/about_contact_and_basic_info" class="text-body">  <i class="fab fa-facebook-f fa-2x"  data-toggle="tooltip" data-placement="top" title="Like us on Facebook"> </i></a>
+         
+         
+            <a href="https://twitter.com" class="text-body">  <i class="fab fa-twitter fa-2x ps-2" data-toggle="tooltip" data-placement="top" title="Follow us on Twitter"></i></a>
+         
+          
+            <a href="https://www.instagram.com" class="text-body"><i class="fab fa-instagram fa-2x ps-2" data-toggle="tooltip" data-placement="top" title="Follow us on Instagram"></i></a>
+        
+            <a href="https://www.youtube.com" class="text-body"><i class="fab fa-youtube fa-2x ps-2" data-toggle="tooltip" data-placement="top" title="Subscribe to our Youtube channel"></i></a>
+          
+        </ul>
+      </div>
+      
+
+     
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0 w ">
+        <h5 class="text-uppercase mb-0 whiteText ">Book to us now!</h5>
+        <h6 class="text-uppercase mb-0 my-2 whiteText ">Allow us to show you our own paradise</h6>
+           <button type="button" class="btn btn-outline-dark mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">BOOK</button>
+
+<!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thank you for selecting our  exclusive resort!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>We will be shortly follow up to you. Thank you for your patience!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary whiteBG" data-bs-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+       <!--END OF BUTTON MODAL-->
+      </div>
+    </div>
+
+            </div>
+      </div>
+</body>
+</html>

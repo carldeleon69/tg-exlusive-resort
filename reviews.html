@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+              w[o] = w[o] || function () {
+                  (w[o].q = w[o].q || []).push(arguments) };
+              js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+              js.id = o; js.src = f; js.async = 1;
+              fjs.parentNode.insertBefore(js, fjs) }
+          (window, document, 'script', 'nw', 'https://chat.norby.io/widget'));
+              nw('init', {
+                  apiKey: '806d24f5-fdf9-41e0-9797-6e8043bcdc7d',
+                  serviceBaseUrl: 'https://api.norby.io',
+                  lang: 'en',
+                  languageList: ['EN','RU','EE','IT','FR','DE','UA','ES','FI','SV','DA','NO','PL','PT','TR','ZH','JA'],
+                  mainColor: '#3E247E',
+                  popupBotAvatarColor: '#3E247E',
+                  multichat: true,
+                  botName: 'Bot',
+                  imageTransferEnabled: true,
+                  side: 'right',
+                  marginSideDesktop: 80,
+                  marginBottomDesktop: 48,
+                  marginSideMobile: 16,
+                  marginBottomMobile: 16
+              });
+          </script>
+          <script>
+          setTimeout(function(){ norbyChat.addPopupMessages({
+              text: "Hi, let's chat!",		
+             });
+          }, 5000);
+      </script>
+   
+
+    <style>
+        @font-face {
+            font-family: Monsterr;
+            src: url(Montserrat-Regular.ttf);
+        }
+
+        * {
+            font-size: 100%;
+            font-family: Monsterr;
+        }
+
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #F1A830;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #0C2043;
+            text-decoration: none;
+        }
+
+        .nav-item .nav-link:hover {
+            background: #0C2043;
+            color: #F1A830;
+        }
+
+        .bordercustom {
+            border: solid #0C2043;
+        }
+
+        .whiteBG {
+            background-color: #fff;
+        }
+
+        .yellowBG {
+            background-color: #F1A830;
+        }
+
+        .darkBG {
+            background-color: #000000;
+        }
+
+        .BlueText {
+            color: #0C2043;
+            font-size: large;
+        }
+
+        .whiteText {
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 30px;
+            color: #0C2043;
+            margin-left: 2px;
+            margin-top: 10px;
+        }
+
+        .titleDark {
+            font-size: 30px;
+            color: #000000;
+            margin-left: 2px;
+            margin-top: 10px;
+        }
+
+        .Citation {
+            text-align: right;
+            margin-right: 20%;
+            font-size: 12px;
+        }
+
+        .regContent {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #F1A830;
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .bodyCont {
+            margin-top: 100px;
+        }
+
+        
+
+        .fa-instagram {
+            color: #fff;
+        }
+
+        .fa-facebook-f {
+            color: #fff;
+        }
+
+        .fa-twitter {
+            color: #fff;
+        }
+
+        .fa-youtube {
+            color: #fff;
+        }
+
+        .black {
+            background-color: #141414;
+        }
+
+        .header-link a {
+            color: #ffffff;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .header-logo {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+        .nav-link {
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: #CFAF3C;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after,
+        .nav-link:focus::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: #CFAF3C;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .overview p,
+        .mission p,
+        .services p,
+        .news-events p,
+        .reviews p,
+        .contact p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .media img,
+        .media video {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .container1 {
+            width: 100%;
+        }
+
+        video {
+            height: auto !important;
+            width: 100% !important;
+        }
+		
+		@media (max-width: 767px) {
+        .center {
+         text-align: center;
+           }
+          .col-md-8.center,
+          .col-md-4.center {
+            text-align: center; 
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .breadcrumb {
+    background-color: #ffffff; 
+    border-radius: 0.25rem; 
+    padding: 10px; 
+    color: #000000;
+  }
+
+  
+  .breadcrumb-item {
+    font-size: 1rem; 
+    color: #000000; 
+  }
+
+ 
+  .breadcrumb-item a {
+    color: #000000; 
+    text-decoration: none; 
+  }
+
+  .breadcrumb-item a:hover {
+    color: #CFAF3C; 
+    text-decoration: none; 
+  }
+
+  
+  .breadcrumb-item.active {
+    color: #6c757d; 
+  }
+
+    </style>
+</head>
+<body>
+    
+    <div class="col-12">
+        <img src="backk.jpg" class="d-block w-100 center mb-3">
+        
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="Home1.html">HOME</a></li>
+                    <li class="breadcrumb-item "><a href="reviews.html">REVIEWS</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="row bordercustom">
+      <nav class="navbar navbar-expand-lg navbar-dark black fixed-top">
+          <div class="col-12">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavTop" aria-controls="navbarNavTop" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center align-items-end" id="navbarNavTop">
+                      <ul class="navbar-nav">
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="About.html">About</a>
+                          </li>
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="Home.html">Rooms</a>
+                          </li>
+                          <li class="nav-item mx-3 d-none d-lg-block">
+                             <a href="Home1.html"><img src="pictures/logo.jpg" alt="Logo" class="header-logo"></a> 
+                          </li>
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="reviews.html">Reviews</a>
+                          </li>
+                          <li class="nav-item header-link mx-5">
+                              <a class="nav-link" href="contact.html">Contacts</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+
+
+
+
+  <div class="row whiteBG bordercustom">
+  <CENTER><div class="title BlueText mb-3 mt-8">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+    <CENTER><div class="title BlueText mb-3 ">VRCNHS MATHEMATICS DEPARTMENT!</div></CENTER> 
+    <div class="col-md-8 center">
+       <div class="row ">
+              <h3 CLASS="mt-5"><div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+               <CENTER> <div class="carousel-inner">
+
+                  <div class="carousel-item active" data-bs-interval="3500">
+                    <img src="pics/A1.jpg" class="d-block w-100" alt="...">
+           <div class="position-absolute bottom-0 text-light w-100"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                         </div>
+                  </div>
+
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="pics/A2.jpg" class="d-block w-100" alt="...">
+         <div class="position-absolute bottom-0 text-light w-100"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                         </div>
+                  </div>
+				  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="pics/A3.jpg" class="d-block w-100" alt="...">
+           <div class="position-absolute bottom-0 text-light w-100"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                         </div>
+                  </div>
+
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="pics/A4.jpg" class="d-block w-100" alt="...">
+           <div class="position-absolute bottom-0 text-light w-100"
+                         style="background-color: rgba(0, 0, 0, 0.5)">
+                         </div>
+                  </div>
+				  
+				  
+
+                </div></CENTER>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div></h3>
+			  
+			  
+			  
+            </div>
+	   
+    </div>
+    <div class=" col-md-4 center ">
+     
+      <div class="title BlueText mb-3 ">Review</div>
+       <p class="card-text center mb-5 ">Having fun @TG Exclusive Resort & Events Place ❤️ With my Mathematics Department Family</p>
+	   <div class="title BlueText mb-3 ">Facilities and Amenities</div>
+       <p class="card-text center mb-5 ">Sobrang ganda ng mga facilities nila! Meron silang malinis at malawak na swimming pool na perfect para sa family bonding o kaya naman ay para sa barkada. May mga private cabanas din na nagbibigay ng privacy at comfort. Ang mga rooms naman ay spacious at well-maintained, equipped with modern amenities para siguradong comfortable ang stay ng guests.</p>
+	    <div class="title BlueText mb-3 ">Customer Service</div>
+       <p class="card-text center mb-3 ">Ang customer service dito ay sobrang accommodating. Lahat ng staff ay friendly at laging handang tumulong. Mabilis ang response nila sa mga inquiries at requests, kaya naman feel na feel mo talaga na VIP ka..</p>
+      </div>
+  
+	    <CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+  
+<CENTER><div class="title BlueText mb-3">DELA CRUZ FAMILY!</div></CENTER>
+<div class="col-md-4 center mt-2">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Napakaganda ng lugar! Mula sa entrance pa lang, ramdam mo na agad ang relaxing at luxurious vibe ng resort. Malinis at well-maintained ang buong paligid, at sobrang serene ng atmosphere. Perfect ito para sa mga gustong makatakas sa ingay at stress ng city life.</p>
+    <p class="card-text center mt-5">Talagang nag-enjoy kami sa aming stay sa Exclusive Resort and Events Place. Perfect ito para sa mga family gatherings, reunions, at kahit sa mga simple getaways. Highly recommended ng Dela Cruz Family para sa mga naghahanap ng relaxing at enjoyable na staycation experience.</p>
+</div>
+<div class="col-md-8 center">
+    <div class="row">
+        <h3 class="mt-2">
+            <div id="carousel2" class="carousel slide ml-0" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3500">
+                        <img src="pics/B1.jpg" class="d-block w-100" alt="...">
+                        <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="pics/B2.jpg" class="d-block w-100" alt="...">
+                        <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3500">
+                        <img src="pics/B3.jpg" class="d-block w-100" alt="...">
+                        <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </h3>
+    </div>
+</div>
+
+<div class="row whiteBG">
+  <CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+  <CENTER><div class="title BlueText mb-3">BAUTISTA FAMILY!</div></CENTER> 
+  <div class="col-md-8 center">
+    <div class="row">
+      <h3 class="mt-5">
+        <div id="carousel3" class="carousel slide pl-0" data-bs-ride="carousel">
+          <CENTER>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3500">
+                <img src="pics/C1.jpg" class="d-block w-100" alt="...">
+                <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="pics/C2.jpg" class="d-block w-100" alt="...">
+                
+                <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="pics/C3.jpg" class="d-block w-100" alt="...">
+                
+                <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="pics/C4.jpg" class="d-block w-100" alt="...">
+             
+                <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+              </div>
+            </div>
+          </CENTER>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </h3>
+    </div>
+  </div>
+  <div class="col-md-4 center">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Grateful for the love shared during MJ's 7th birthday bash with our cherished friends and family at TG Exclusive Resort & Events Place. It’s a hidden gem in the heart of the farm! Its cozy ambiance, coupled with the welcoming owners, made our stay unforgettable.</p>
+    <p class="card-text center mt-5">From the sparkling swimming pool to the incredible amenities, every moment felt like a glamorous escape. Experiencing the breathtaking sunrise and sunset was simply magical. Even after 30 hours without sleep, our stay was amazingly sulit!</p>
+  </div>
+</div>
+<CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+
+
+<CENTER><div class="title BlueText mb-3">ICCDC BATCH 2015!</div></CENTER>
+<div class="col-md-4 center mt-2">
+  <div class="title BlueText mt-5">Review</div>
+  <p class="card-text center mt-5">Exceptional ang customer service dito. Lahat ng staff ay friendly at approachable. Ramdam mo talaga na priority nila ang comfort at satisfaction ng guests. Mabilis silang mag-assist at laging may ngiti sa kanilang mga mukha, kaya naman feeling at home talaga kami.</p>
+  <p class="card-text center mt-5">Nag-book kami ng family suite at sobrang satisfied kami sa aming room. Maluwag ito, malinis, at kumpleto sa amenities. Ang beds ay comfortable at ang linens ay fresh at malambot. May magandang view din mula sa aming balcony na nagdagdag sa relaxing experience namin.</p>
+</div>
+<div class="col-md-8 center">
+  <div class="row">
+    <h3 class="mt-2">
+      <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3500">
+            <img src="pics/D1.jpg" class="d-block w-100" alt="...">
+           
+            <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </h3>
+  </div>
+</div>
+
+
+
+<div class="row whiteBG">
+  <CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+  <CENTER><div class="title BlueText mb-3">SAMSON FAMILY!</div></CENTER> 
+  <div class="col-md-8 center">
+    <div class="row">
+      <h3 class="mt-5">
+        <div id="carousel5" class="carousel slide ml-0" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img src="pics/E1.jpg" class="d-block w-100" alt="...">
+             
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/E2.jpg" class="d-block w-100" alt="...">
+              
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/E3.jpg" class="d-block w-100" alt="...">
+             
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </h3>
+    </div>
+  </div>
+  <div class="col-md-4 center">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Sobrang nag-enjoy kami sa aming stay sa Exclusive Resort and Events Place. Ito ay highly recommended para sa mga pamilya na naghahanap ng quality time together at gustong mag-relax sa isang maganda at tahimik na lugar. Balak namin bumalik dito sa susunod naming bakasyon!</p>
+    <p class="card-text center mt-5">Although hindi kami nag-host ng event, nakita namin na well-equipped ang kanilang event spaces. Ang mga function halls ay maluwag at maganda ang setup, perfect para sa mga weddings, corporate events, at special occasions. Mukhang kayang i-cater ang iba't ibang klase ng events na kailangan ng mga guests.</p>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row whiteBG">
+  <CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+  <CENTER><div class="title BlueText mb-3">AMBULATORY SURGICAL UNIT!</div></CENTER> 
+  <div class="col-md-4 center mt-2">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Nag-provide ang resort ng lahat ng kailangan namin para sa aming team-building activities. May mga props, sound system, at iba pang kagamitan na talagang nakatulong para maging successful ang aming event. Ang event coordinator ay laging nandiyan para siguraduhing smooth ang flow ng aming activities.</p>
+    <p class="card-text center mt-5">Overall, naging napakagandang experience ang aming team building sa Exclusive Resort and Events Place. Sobrang nag-enjoy ang buong team at talagang lumakas ang aming camaraderie. Highly recommended ito para sa mga corporate at organizational events, lalo na kung gusto ninyo ng isang lugar na relaxing pero puno ng activities.</p>
+  </div>
+  <div class="col-md-8 center">
+    <div class="row">
+      <h3 class="mt-2">
+        <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img src="pics/F1.jpg" class="d-block w-100" alt="...">
+              
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/F2.jpg" class="d-block w-100" alt="...">
+              
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)"></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </h3>
+    </div>
+  </div>
+</div>
+
+
+<div class="row whiteBG">
+  <CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+  <CENTER><div class="title BlueText mb-3">EMMALYN MEDIDA AND HER FAMILY!</div></CENTER> 
+  <div class="col-md-8 center">
+    <div class="row">
+      <h3 class="mt-5">
+        <div id="carousel7" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img src="pics/G1.jpg" class="d-block w-100" alt="...">
+                  
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/G2.jpg" class="d-block w-100" alt="...">
+                 
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel7" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel7" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </h3>
+    </div>
+  </div>
+  <div class="col-md-4 center">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Sobrang nag-enjoy kami sa aming stay sa Exclusive Resort and Events Place. Ito ay highly recommended para sa mga pamilya na naghahanap ng quality time together at gustong mag-relax sa isang maganda at tahimik na lugar. Balak namin bumalik dito sa susunod naming bakasyon!</p>
+    <p class="card-text center mt-5">Nag-book kami ng family suite at sobrang satisfied kami sa aming room. Maluwag ito, malinis, at kumpleto sa amenities. Ang beds ay comfortable at ang linens ay fresh at malambot. May magandang view din mula sa aming balcony na nagdagdag sa relaxing experience namin.</p>
+  </div>
+</div>
+
+
+<CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+ 
+<CENTER><div class="title BlueText mb-3">SK MARJORIE BALBOA AND FAMILY!</div></CENTER>
+<div class="row whiteBG">
+  <div class="col-md-4 center mt-2">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Nag-stay kami sa isang family suite at talagang impressed kami sa kaluwagan at ganda ng room. Malinis ito at kumpleto sa amenities na kailangan namin. Ang mga kama ay napaka-comfortable at may magandang view mula sa balcony. Plus, maganda at well-maintained ang banyo.</p>
+    <p class="card-text center mt-5">Overall, ang aming stay sa Exclusive Resort and Events Place ay sobrang saya at relaxing. Perfect ito para sa mga pamilya na gustong mag-bonding at mag-relax sa isang maganda at tahimik na lugar. Highly recommended ng Pamilya Reyes para sa kahit sinong naghahanap ng quality time together.</p>
+    <p class="card-text center mt-5">Kung gusto ninyo ng isang memorable at relaxing na staycation experience, huwag nang magdalawang-isip pa at subukan ang Exclusive Resort and Events Place. Siguradong sulit ang bawat sandali ninyo dito!</p>
+  </div>
+  <div class="col-md-8 center">
+    <div class="row">
+      <h3 class="mt-2">
+        <div id="carousel8" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img src="pics/H1.jpg" class="d-block w-100" alt="...">
+                   
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/H2.jpg" class="d-block w-100" alt="...">
+                
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/H3.jpg" class="d-block w-100" alt="...">
+                 
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel8" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel8" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </h3>
+    </div>
+  </div>
+</div>
+
+<div class="row whiteBG">
+  <CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+  <CENTER><div class="title BlueText mb-3">MS. IRENE QUIÑO AND HER FAMILY!</div></CENTER> 
+  <div class="col-md-8 center">
+    <div class="row">
+      <h3 class="mt-5">
+        <div id="carousel9" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img src="pics/I1.jpg" class="d-block w-100" alt="...">
+                  
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/I2.jpg" class="d-block w-100" alt="...">
+                  
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/I3.jpg" class="d-block w-100" alt="...">
+              
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel9" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel9" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </h3>
+    </div>
+  </div>
+  <div class="col-md-4 center">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Sobrang nag-enjoy kami sa aming stay sa Exclusive Resort and Events Place. Ito ay highly recommended para sa mga pamilya na naghahanap ng quality time together at gustong mag-relax sa isang maganda at tahimik na lugar. Balak namin bumalik dito sa susunod naming bakasyon!</p>
+    <p class="card-text center mt-5">Nag-book kami ng family suite at sobrang satisfied kami sa aming room. Maluwag ito, malinis, at kumpleto sa amenities. Ang beds ay comfortable at ang linens ay fresh at malambot. May magandang view din mula sa aming balcony na nagdagdag sa relaxing experience namin.</p>
+  </div>
+</div>
+
+<CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+
+<CENTER><div class="title BlueText mb-3">MA’AM MARIELLE VIRAY-CATO AND HER FAMILY!</div></CENTER> 
+<div class="row whiteBG">
+  <div class="col-md-4 center mt-2">
+    <div class="title BlueText mt-5">Review</div>
+    <p class="card-text center mt-5">Ang setup ng gender reveal ay talagang maganda at well-organized. Ang event coordinator ng resort ay very helpful sa pag-aayos ng lahat ng details—from decorations to the actual reveal moment. May special effects pa na talagang nagbigay ng extra excitement sa aming event.</p>
+    <p class="card-text center mt-5">Overall, sobrang saya at memorable ang aming gender reveal party sa Exclusive Resort and Events Place. Ang lugar ay perfect para sa ganitong klaseng events, at ang staff ay exceptional sa pagbibigay ng serbisyo. Highly recommended ito para sa mga nagbabalak mag-host ng special occasions.</p>
+  </div>
+  <div class="col-md-8 center">
+    <div class="row">
+      <h3 class="mt-2">
+        <div id="carousel10" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img src="pics/J1.jpg" class="d-block w-100" alt="...">
+             
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="pics/J2.jpg" class="d-block w-100" alt="...">
+           
+              <div class="position-absolute bottom-0 text-light w-100" style="background-color: rgba(0, 0, 0, 0.5)">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel10" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel10" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </h3>
+    </div>
+  </div>
+</div>
+
+<CENTER><div class="title BlueText mb-3 mt-10">-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</div></CENTER>
+        
+            <div class="row darkBG py-5 navbar-dark black">
+             
+              <div class="col-lg-3 col-md-4 mb-12 mb-md-0 ">
+                <center><a href="Home1.html" class = "navbar-brand " ><img src="pictures/tg logo.jpg" class="d-block w-75"></a> </center>
+				
+              </div>
+              
+        
+             
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 whiteText">
+                <h5 class="text-uppercase mb-0 ">Sitemap</h5>
+        
+                <ul class="list-unstyled my-2 whiteText">
+                  <li>
+                    <a href="About.html" class="whiteText ">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="Local.html" class=" whiteText">ROOMS</a>
+                  </li>
+                  <li>
+                    <a href="reviews.html" class=" whiteText">REVIEWS</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class=" whiteText">CONTACTS</a>
+                  </li>
+          
+                </ul>
+              </div>
+            
+        
+              
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase whiteText ">Social Media</h5>
+        
+                <ul class="list-unstyled mb-0">
+                  
+                  
+                    <a href="https://www.facebook.com/TGPrivateResort/about_contact_and_basic_info" class="text-body">  <i class="fab fa-facebook-f fa-2x"  data-toggle="tooltip" data-placement="top" title="Like us on Facebook"> </i></a>
+                 
+                 
+                    <a href="https://twitter.com" class="text-body">  <i class="fab fa-twitter fa-2x ps-2" data-toggle="tooltip" data-placement="top" title="Follow us on Twitter"></i></a>
+                 
+                  
+                    <a href="https://www.instagram.com" class="text-body"><i class="fab fa-instagram fa-2x ps-2" data-toggle="tooltip" data-placement="top" title="Follow us on Instagram"></i></a>
+                
+                    <a href="https://www.youtube.com" class="text-body"><i class="fab fa-youtube fa-2x ps-2" data-toggle="tooltip" data-placement="top" title="Subscribe to our Youtube channel"></i></a>
+                  
+                </ul>
+              </div>
+              
+        
+             
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 w ">
+                <h5 class="text-uppercase mb-0 whiteText ">Book to us now!</h5>
+                <h6 class="text-uppercase mb-0 my-2 whiteText ">Allow us to show you our own paradise</h6>
+                   <button type="button" class="btn btn-outline-dark mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">BOOK</button>
+
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Thank you for selecting our  exclusive resort!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>We will be shortly follow up to you. Thank you for your patience!</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary whiteBG" data-bs-dismiss="modal">Close</button>
+        
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+               </div>
+              
+              </div>
+            </div>
+           
+
+</div>
+</body>
+</html>
